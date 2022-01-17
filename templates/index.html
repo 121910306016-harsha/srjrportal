@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRJR-PORTAL</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><img src="static/img/LOGO.jpg">GITAM JUNIOR SENIOR PORTAL</a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#course">Course</a></li>
+            <li><a href="#teacher">Teacher</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="fas fa-user-circle"></div>
+
+</header>
+
+<!-- header section ends -->
+<!-- login form  -->
+
+<div class="login-form">
+    <form action="/login" method="POST">
+        <h3>login</h3>
+
+        <input type="text" placeholder="username" name="username" class="box">
+        <input type="password" placeholder="password" name="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="/signup">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home"style="background-image: url({{url_for('static',filename='img/b1.jpg')}});">
+    <div class="transbox">
+    <h1>WELCOME {{data}} TO JUNIOR SENIOR INTERACTIONAL WEBSITE!!</h1>
+    <center><p>WE ARE HERE TO HELP  OUR PEER JUNIORS AND GIVE A HELPFUL SUPPORT,SENIOR HAND AND TO SHARE OUR PERSONAL EXPERIENCES HERE
+    </p></center>
+    <a href="#"><button class="btn">get started</button></a>
+   <br>
+   <br>
+</div>
+    <div class="shape"></div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="static/img/p4.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>What are we about?</h3>
+        <p>This website is all about helping jumiors with senior insights and experiences.</p>
+        <p>So please go through our website and explore</p>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- course section starts  -->
+
+<section class="course" id="course">
+
+<h1 class="heading">OUR SUBJECT COURSE PAGES</h1>    
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="static/img/C.png" alt="">
+        <div class="content">
+    
+            <a href="/c" class="title">C language(PSP)</a>
+            <p>LEARN C LANGUAGE WITH SENIOR GUIDENCE AND REFERENCES.</p>
+            <i class="far fa-bookmark"></i><p><a href="/c" style='text-decoration: underline;'>Visit Course page to to acess the Notes ,videos and references</a></p>
+
+            <div class="info">
+                click the above link to acess the subject page
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="static/img/py.png" alt="">
+        <div class="content">
+    
+            <a href="/py" class="title">Python language</a>
+            <p>LEARN Python LANGUAGE WITH SENIOR GUIDENCE AND REFERENCES.</p>
+            <i class="far fa-bookmark"></i><p><a href="/py" style='text-decoration: underline;'>Visit Course page to to acess the Notes ,videos and references</a></p>
+
+            <div class="info">
+                click the above link to acess the subject page
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="static/img/data.png" alt="">
+        <div class="content">
+    
+            <a href="/dsa" class="title">DATA STRUCTURES</a>
+            <p>LEARN DATA STRUCTURES LANGUAGE WITH SENIOR GUIDENCE AND REFERENCES.</p>
+            <i class="far fa-bookmark"></i><p><a href="/dsa" style='text-decoration: underline;'>Visit Course page to to acess the Notes ,videos and references</a></p>
+
+            <div class="info">
+                click the above link to acess the subject page
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="static/img/db.jpg" alt="">
+        <div class="content">
+    
+            <a href="/dsa" class="title">DBMS(DATABASEMANAGEMENT SYSTEM)</a>
+            <p>LEARN DBMS LANGUAGE WITH SENIOR GUIDENCE AND REFERENCES.</p>
+            <i class="far fa-bookmark"></i><p><a href="/dbms" style='text-decoration: underline;'>Visit Course page to to acess the Notes ,videos and references</a></p>
+
+            <div class="info">
+                click the above link to acess the subject page
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <img src="static/img/cloud.png" alt="">
+        <div class="content">
+    
+            <a href="/dsa" class="title">SOFTWARE ENGG</a>
+            <p>LEARN SE LANGUAGE WITH SENIOR GUIDENCE AND REFERENCES.</p>
+            <i class="far fa-bookmark"></i><p><a href="/se" style='text-decoration: underline;'>Visit Course page to to acess the Notes ,videos and references</a></p>
+
+            <div class="info">
+                click the above link to acess the subject page
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- course section ends -->
+
+<!-- BLOG section starts  -->
+
+<section class="teacher" id="teacher" style="background-image:url(static/img/b2.jpeg);">
+<div class="transbox2">
+<h1>WE AS A SENIORS HAVE MANY USEFUL EXPERIENCES TO SHARE AND <br>
+    SUGGESTIONS TO GIVE YOU PEOPLE FROM OUR OWN EXPERIENCES.</h1>
+<center><p> HERE U CAN ACESS THE BLOGS OF SENIORS AND READ THIER BLOGS AND EXPERIENCES</p></center>
+<a href="/b"><button class="btn">Read blogs click here</button></a>
+<br>
+<br>
+</div>
+</section>
+
+<!-- BLOG section ends -->
+
+<!-- feedback section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading">contact us</h1>
+
+<div class="row">
+
+    <form action="">
+        <input type="text" placeholder="full name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <input type="number" placeholder="your number" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address"></textarea>
+        <input type="submit" class="btn" value="send now">
+    </form>
+
+    <div class="image">
+        <img src="images/contact-img.png" alt="">
+    </div>
+
+</div>
+
+</section>
+
+<!-- feedback section ends -->
+
+<!-- footer section starts  -->
+<script href="main.js"></script>
+<div class="footer">
+
+    <h1 class="credit"><a href="#">Copyrights are reserved by &copy;M.SAI HARSHA VARDHAN 2022</a></h1>
+
+</div>
+
+<!-- footer section ends -->
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{{url_for('static',filename='js/main.js') }}"></script>
+
+</body>
+</html>
